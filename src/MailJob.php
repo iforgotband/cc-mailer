@@ -39,7 +39,6 @@ class MailJob {
     }
     
     protected function send() {
-        echo "sending\n";
         foreach ($this->messages as $message) {
             if (!$this->mailer->send($message, $errors)) {
                 var_dump($errors);
