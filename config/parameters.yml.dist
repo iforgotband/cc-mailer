@@ -1,0 +1,7 @@
+parameters:
+    mail_host: smtp.gmail.com
+    mail_user: support@crisistextline.org
+    mail_password: ~
+    mail_port: 25
+    mail_from_name: Jen James
+    mail_from_email: support@crisistextline.org

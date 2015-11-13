@@ -1,0 +1,23 @@
+{
+    "require": {
+        "swiftmailer/swiftmailer": "@stable",
+        "symfony/yaml": "@stable",
+        "incenteev/composer-parameter-handler": "@stable"
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters"
+        ],
+        "post-update-cmd": [
+            "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters"
+        ]
+    },
+    "extra": {
+        "incenteev-parameters": {
+            "file": "config/parameters.yml"
+        }
+    },
+    "autoload": {
+        "psr-4": {"": "src/"}
+    }
+}
